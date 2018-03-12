@@ -1,0 +1,35 @@
+<!>
+<html>
+<body>
+<script>
+	var number = prompt("Please enter a number ");
+	
+	console.log("original number is " + number);
+	
+	var thou_mod= number%1000;
+	var thou = number - thou_mod;
+	var thou_real = thou/1000;
+	
+	console.log(thou_real + " thousands");
+	
+	var hund_mod = thou_mod%100;
+	var hund = thou_mod - hund_mod;
+	var hund_real = hund/100;
+	
+	console.log(hund_real + " hundreds");
+	
+	var tens_mod = hund_mod%10;
+	var tens = hund_mod - tens_mod;
+	var tens_real = tens/10;
+	
+	console.log(tens_real + " tens");
+	
+	var ones_mod = tens_mod%1;
+	var ones = tens_mod - ones_mod;
+	var ones_real = ones/1;
+	
+	console.log(ones_real + " ones")
+
+</script>
+</body>
+</html>
